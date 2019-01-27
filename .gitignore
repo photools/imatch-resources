@@ -2,3 +2,4 @@ archive/
 bitmaps/
 skins/
 *.bak
+.vscode/settings.json
