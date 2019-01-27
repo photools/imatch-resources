@@ -1,0 +1,10 @@
+{
+	"commands":{},
+	"menus":{},
+	"properties":{},
+	"strings":{
+		"FILEWND_SETTINGS_PROPERTYSET_NAME_UI":"Interface utilisateur"
+	},
+	"messages":{},
+	"dialogs":{}
+}

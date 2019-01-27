@@ -1,0 +1,11 @@
+{
+	"commands":{},
+	"menus":{},
+	"properties":{},
+	"strings":{},
+	"messages":{},
+	"dialogs":{
+		"PTRMDLG_PASTE_ATTRIBUTES.ld.IDC_LIST_ATTR.99":"Locatie (doel)",
+		"PTRMDLG_PASTE_ATTRIBUTES.ld.IDC_LIST_ATTR.99:H":"Doel (getoond): Land, ISO landcode, staat/provincie, stad, locatie."
+	}
+}

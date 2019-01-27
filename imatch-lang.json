@@ -1,0 +1,100 @@
+{
+  "languages": [
+    {
+      "@": "--- This is the default language, used as a fallback and reference.",
+      "id": "en",
+      "default":true,
+      "name": "English (United States)",
+      "@1": "This is the index in the language flags bitmap strip (PTR_BM_APP_FLAGS) used for menues etc.",
+      "bmid": 3,
+      "translators": [
+        "Mario M. Westphal"
+      ]
+    },
+    {
+      "id": "de",
+      "name": "Deutsch",
+      "bmid": 0,
+      "translators": [
+        "Mario M. Westphal",
+        "Georg Gerlich"
+      ]
+    },
+    {
+      "id": "nl",
+      "name": "Nederlands",
+      "bmid": 8,
+      "translators": [
+        "Mees Dekker",
+        "Ger Derksen"
+      ]
+    },
+    {
+      "id": "pt",
+      "name": "Português",
+      "bmid": 10,
+      "translators": [
+        "José Rosa",
+        "Jaime Ramos"
+      ]
+    },
+    {
+      "id": "es",
+      "name": "Español",
+      "bmid": 4,
+      "translators": [
+        "Iñigo Figuero"
+      ]
+    },
+    {
+      "id": "hu",
+      "name": "hrvatski",
+      "bmid": 14,
+      "translators": [
+        "Iñigo Figuero"
+      ]
+    },
+    {
+      "id": "it",
+      "name": "italiano",
+      "bmid": 6,
+      "translators": [
+        "Marco Goglio"
+      ]
+    },
+    {
+      "id": "fr",
+      "name": "langue française",
+      "bmid": 7,
+      "translators": [
+        "Bruno Gilli",
+        "Bernard Grychowski"
+      ]
+    },
+    {
+      "id": "no",
+      "name": "Norsk",
+      "bmid": 9,
+      "translators": [
+        "Vidar Øvre",
+        "Vemund Halvorsen"
+      ]
+    },
+    {
+      "id": "fi",
+      "name": "suomi",
+      "bmid": 12,
+      "translators": [
+        "Jari Väätäinen"
+      ]
+    },
+    {
+      "id": "se",
+      "name": "Svenska",
+      "bmid": 13,
+      "translators": [
+        "Erik Bryntse"
+      ]
+    }
+  ]
+}
