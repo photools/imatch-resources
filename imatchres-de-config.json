@@ -1,0 +1,17 @@
+{
+    "validationIgnore": {
+        "strings": {
+            "PTR_VIEWER_SB_DATA_IMAGE": {},
+            "PTR_VIEWER_SB_DATA_MP3": {},
+            "PTR_VIEWER_SB_DATA_OFFICE": {},
+            "PTR_VIEWER_SB_DATA_PDF": {}
+        },
+        "properties": {
+            "app.ui.treeiconsize:D": {},
+            "cachemanager.minsize:D": {},
+            "config.md.protectunwritten:D": {},
+            "dbview.fm.showfriendlynames:D": {},
+            "objectproperties.folder.offline:D": {}
+        }
+    }
+}
