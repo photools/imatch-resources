@@ -166,8 +166,6 @@
 		"PTRMDLG_APP_VERIFY.caption":"  Controle  ",
 		"PTRMDLG_APP_VERIFY.td.cue.package":"Selecteer een pakket",
 		"PTRMDLG_APP_VERIFY.td.header.icon":"box_view_48x48.png",
-		"PTRMDLG_APP_VERIFY.td.header.text":"Deze opdracht test ieder element in het gekozen pakket om te garanderen dat het gehele pakket valide en bruikbaar is.",
-		"PTRMDLG_PASTE_ATTRIBUTES.ld.IDC_LIST_ATTR.99":"Locatie (doel)",
-		"PTRMDLG_PASTE_ATTRIBUTES.ld.IDC_LIST_ATTR.99:H":"Doel (getoond): Land, ISO landcode, staat/provincie, stad, locatie."
+		"PTRMDLG_APP_VERIFY.td.header.text":"Deze opdracht test ieder element in het gekozen pakket om te garanderen dat het gehele pakket valide en bruikbaar is."
 	}
 }

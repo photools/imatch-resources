@@ -1,0 +1,15 @@
+{
+    "validationErrors": {
+        "commands": [],
+        "strings": [],
+        "properties": [],
+        "menus": [],
+        "dialogs": [],
+        "messages": []
+    },
+    "validationIgnore": {
+        "dialogs": [
+            "PTRMDLG_APP_RES.td.header.text"
+        ]
+    }
+}

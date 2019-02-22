@@ -2448,6 +2448,12 @@
 					},
 					{
 						"id":"ID_CMD_FILE_OPEN_IN_RESULT_WINDOW"
+					},
+					{
+						"id":"ID_CMD_FILE_GOTO_NEXT_BOOKMARK"
+					},
+					{
+						"id":"ID_CMD_FILE_GOTO_PREV_BOOKMARK"
 					}
 				]
 			},
@@ -5343,10 +5349,6 @@
 								"type":"separator"
 							},
 							{
-								"type":"cmd",
-								"id":"ID_RESMGR_CHECK_MISSINGLANG"
-							},
-							{
 								"type":"separator"
 							},
 							{
@@ -6243,10 +6245,6 @@
 							},
 							{
 								"type":"separator"
-							},
-							{
-								"type":"cmd",
-								"id":"ID_RESMGR_CHECK_MISSINGLANG"
 							},
 							{
 								"type":"separator"
@@ -8842,6 +8840,14 @@
 							{
 								"type":"cmd",
 								"id":"ID_CMD_FILE_GOTO_FOCUSED"
+							},
+							{
+								"type":"cmd",
+								"id":"ID_CMD_FILE_GOTO_PREV_BOOKMARK"
+							},
+							{
+								"type":"cmd",
+								"id":"ID_CMD_FILE_GOTO_NEXT_BOOKMARK"
 							},
 							{
 								"type":"separator"
@@ -15055,6 +15061,9 @@
 						"id":"config.md.keepxmp"
 					},
 					{
+						"id":"config.md.preservefilename"
+					},
+					{
 						"id":"config.md.ignorerating"
 					},
 					{
@@ -16038,6 +16047,8 @@
 					"PTR_TASKMAN_COL_RATING":{},
 					"PTR_TASKMAN_FILE_READONLY":{},
 					"PTR_TASKMAN_FILE_GENERIC":{},
+					"PTR_TASKMAN_FILEWND_UNDO_SELECTION":{},
+					"PTR_TASKMAN_FILEWND_GENERIC":{},
 					"PTR_TASKMAN_FILE_DELETE":{},
 					"PTR_TASKMAN_FILE_COPY":{},
 					"PTR_TASKMAN_FILE_MOVE":{},
@@ -16206,6 +16217,10 @@
 					},
 					"PTR_VIEW_DBVIEW_FM_ROOT_RO":{},
 					"PTR_VIEW_DBVIEW_FM_EMPTYPROMPT":{},
+					"PTR_VIEW_DBVIEW_FM_EMPTYPROMPT_MYPICS":{},
+					"PTR_VIEW_DBVIEW_FM_EMPTYPROMPT_IMLC":{},
+					"PTR_VIEW_DBVIEW_FM_EMPTYPROMPT_DROPHERE":{},
+					"PTR_VIEW_DBVIEW_FM_EMPTYPROMPT_IMH": {},
 					"PTR_VIEW_DBVIEW_OFFLINE_DRIVE":{},
 					"PTR_VIEW_DBVIEW_OFFLINE_MEDIA":{},
 					"PTR_VIEW_DBVIEW_OFFLINE_FOLDER":{},
@@ -16269,6 +16284,8 @@
 					"PTR_PANEL_DBCLIENT_FOLDERS_TREE_FILTER":{
 						"desc":"Name for the Filter Panel inside the Folder tree in the Folder and Media View"
 					},
+					"PTR_PANEL_DBCLIENT_FOLDERS_TREE_RECENT":{},
+
 					"PTR_PANEL_DBCLIENT_COLLECTIONS_TREE":{
 						"desc":"Name for the Tree Panel in the Collection view"
 					},
@@ -16977,6 +16994,7 @@
 					"PTR_FILEHISTORY_EVENTNAME_GROUPSCHANGED":{},
 					"PTR_FILEHISTORY_EVENTNAME_METADATACHANGED":{},
 					"PTR_FILEHISTORY_EVENTNAME_ANNO":{},
+					"PTR_FILEHISTORY_EVENTNAME_ATTRIBUTE":{},
 					"PTR_FILEHISTORY_EVENTNAME_VIEWED":{},
 					"PTR_FILEHISTORY_EVENTNAME_PRINTED":{},
 					"PTR_FILEHISTORY_EVENTNAME_EMAILED":{},
@@ -17909,6 +17927,7 @@
 					"PTR_MSG_DB_CLEAR_QUEUES":{
 						"type":"[[IDI_QUESTION]]",
 						"desc":"",
+						"verify":{},
 						"buttons":[
 							{
 								"id":"1001"
@@ -18050,7 +18069,8 @@
 					},
 					"PTR_MSG_APP_INFO_BACKGROUNDPROCESSING":{
 						"type":"[[TD_INFORMATION_ICON]]",
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_DBREADONLY_NOAVAIL":{
 						"type":"[[TD_INFORMATION_ICON]]",
@@ -18083,6 +18103,7 @@
 					"PTR_MSG_LOGFILE_HAD_ERROR":{
 						"type":"[[TD_WARNING_ICON]]",
 						"desc":"",
+						"verify":{},
 						"buttons":[
 							{
 								"id":"1001"
@@ -18116,12 +18137,14 @@
 					},
 					"PTR_MSG_WIC_CODEC_MISSING":{
 						"type":"[[TD_INFORMATION_ICON]]",
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_APP_RESCAN_KEEP_OFFLINE":{
 						"type":"[[TD_INFORMATION_ICON]]",
 						"enableMarkup":true,
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_APP_HIGH_RES_DETECT":{
 						"type":"[[TD_INFORMATION_ICON]]",
@@ -18265,7 +18288,8 @@
 					"PTR_MSG_DROPFILES":{
 						"enableMarkup":true,
 						"desc":"Shown when files are dropped",
-						"footerType":"[[TD_INFORMATION_ICON]]"
+						"footerType":"[[TD_INFORMATION_ICON]]",
+						"verify":{}
 					},
 					"PTR_MSG_RELOCATE_FILE_EXISTING_TARGET":{
 						"desc":"Attempt to relocate a file onto an existing file"
@@ -18351,7 +18375,8 @@
 					"PTR_MSG_FILEWND_FILEDEL_PROMPT_REJECT":{
 						"type":"[[TD_INFORMATION_ICON]]",
 						"enableMarkup":true,
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_FILEWND_DLGLAYOUT_INVALIDNAME":{
 						"type":"[[TD_INFORMATION_ICON]]",
@@ -18376,7 +18401,8 @@
 					},
 					"PTR_MSG_FILEWND_MDIMPORT":{
 						"type":"[[IDI_INFORMATION]]",
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_FILEWND_FACEIMPORT":{
 						"type":"[[IDI_INFORMATION]]",
@@ -18392,7 +18418,8 @@
 						"desc":""
 					},
 					"PTR_MSG_FILEWND_OPEN_STACK_IN_VIEWER":{
-						"type":"[[TD_INFORMATION_ICON]]"
+						"type":"[[TD_INFORMATION_ICON]]",
+						"verify":{}
 					},
 					"PTR_MSG_RELATIONS_SELALL_COLLAPSED_MASTER":{
 						"type":"[[TD_INFORMATION_ICON]]"
@@ -18417,7 +18444,8 @@
 						"desc":""
 					},
 					"PTR_MSG_FILEWND_SEARCH_STACK_WARNING":{
-						"type":"[[TD_INFORMATION_ICON]]"
+						"type":"[[TD_INFORMATION_ICON]]",
+						"verify":{}
 					},
 					"PTR_MSG_FILEWND_CUSTOM_SORT_WARNING":{
 						"type":"[[TD_WARNING_ICON]]"
@@ -18426,7 +18454,8 @@
 						"type":"[[TD_INFORMATION_ICON]]"
 					},
 					"PTR_MSG_FILEWND_LOD_EDIT_TIP":{
-						"type":"[[TD_INFORMATION_ICON]]"
+						"type":"[[TD_INFORMATION_ICON]]",
+						"verify":{}
 					}
 				}
 			},
@@ -18698,12 +18727,14 @@
 					"PTR_MSG_FILEOP_DELETEFILE_RO":{
 						"type":"[[IDI_WARNING]]",
 						"enableMarkup":true,
-						"desc":"Delete File prompt"
+						"desc":"Delete File prompt",
+						"verify":{}
 					},
 					"PTR_MSG_FILEOP_DELETEFILE_HS":{
 						"type":"[[IDI_WARNING]]",
 						"enableMarkup":true,
-						"desc":"Delete File prompt"
+						"desc":"Delete File prompt",
+						"verify":{}
 					},
 					"PTR_MSG_FILEOP_REMOVEFILE":{
 						"type":"[[IDI_WARNING]]",
@@ -18769,7 +18800,8 @@
 					},
 					"PTR_MSG_FILEOP_COPY_IMAGE":{
 						"type":"[[TD_INFORMATION_ICON]]",
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_FILEOP_SETEXIFDT_EXIF_WB_WARNING":{
 						"type":"[[TD_WARNING_ICON]]",
@@ -18872,7 +18904,8 @@
 					"PTR_MSG_MDCONTAINER_SAVEBTN":{
 						"type":"[[IDI_INFORMATION]]",
 						"enableMarkup":true,
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_MDCONTAINER_PASTE_KEYWORDS":{
 						"type":"[[IDI_QUESTION]]",
@@ -18904,11 +18937,13 @@
 					},
 					"PTR_MSG_MDCONTAINER_KW_TOOMANYFILESFORMERGE":{
 						"type":"[[TD_WARNING_ICON]]",
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_MDCONTAINER_TOOMANYFILESFORMERGE":{
 						"type":"[[TD_WARNING_ICON]]",
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_MDCONTAINER_KWPROPAGATE":{
 						"type":"[[IDI_INFORMATION]]",
@@ -19090,6 +19125,7 @@
 					"PTR_MSG_CACHEMANAGER_PURGEREBUILD":{
 						"type":"",
 						"desc":"",
+						"verify":{},
 						"buttons":[
 							{
 								"id":"1001"
@@ -19102,6 +19138,7 @@
 					"PTR_MSG_CACHEMANAGER_PURGEREBUILD_JPEG":{
 						"type":"",
 						"desc":"",
+						"verify":{},
 						"buttons":[
 							{
 								"id":"1001"
@@ -19240,11 +19277,13 @@
 					},
 					"PTR_MSG_GEO_PROMPTUPDATE":{
 						"type":"[[IDI_INFORMATION]]",
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_GEO_MANYFILESWARNING":{
 						"type":"[[IDI_WARNING]]",
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_GEO_FILE_SKIPPED":{
 						"type":"[[TD_INFORMATION_ICON]]",
@@ -19256,7 +19295,8 @@
 					},
 					"PTR_MSG_GEO_FILE_WRITEBACKINFO":{
 						"type":"[[TD_INFORMATION_ICON]]",
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_GEO_GOOGLE_API_KEY":{
 						"type":"[[IDI_INFORMATION]]"
@@ -19314,7 +19354,8 @@
 					},
 					"PTR_MSG_VIEWER_ANNO_ADDSIMPLEFACE":{
 						"type":"[[IDI_INFORMATION]]",
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_VIEWER_ANNO_DETECTFACES":{
 						"type":"[[IDI_QUESTION]]",
@@ -19394,7 +19435,8 @@
 					"PTR_MSG_IMPEXP_BATCH_EXPORT_OVERWRITEPROMPT":{
 						"type":"[[IDI_QUESTION]]",
 						"enableMarkup":true,
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_IMPEXP_BATCH_EXPORT_UNITRESCHANGE":{
 						"type":"[[TD_INFORMATION_ICON]]",
@@ -19407,11 +19449,13 @@
 					},
 					"PTR_MSG_IMPEXP_BATCH_EXPORT_CLEANFOLDERWARNING":{
 						"type":"[[TD_WARNING_ICON]]",
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_IMPEXP_EMAIL_ACCOUNTINFO":{
 						"type":"[[TD_INFORMATION_ICON]]",
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_IMPEXP_EMAIL_TESTOK":{
 						"type":"[[TD_INFORMATION_ICON]]",
@@ -19454,7 +19498,9 @@
 						"type":"[[IDI_QUESTION]]",
 						"enableMarkup":true,
 						"desc":"New variable dialog",
-						"verifyChecked":"true",
+						"verify":{
+							"checked":"true"
+						},
 						"buttons":[
 							{
 								"id":"1001"
@@ -19657,11 +19703,13 @@
 					},
 					"PTR_MSG_SCRIPTS_DESIGNMODEHINT":{
 						"type":"[[IDI_INFORMATION]]",
-						"desc":""
+						"desc":"",
+						"verify":{}
 					},
 					"PTR_MSG_SCRIPTS_SYSSCRIPTPROMPT":{
 						"type":"[[IDI_INFORMATION]]",
-						"desc":""
+						"desc":"",
+						"verify":{}
 					}
 				}
 			},
@@ -19807,7 +19855,8 @@
 						"type":"[[TD_ERROR_ICON]]"
 					},
 					"PTR_MSG_PRINTUI_ADD_PAGE_TIP":{
-						"type":"[[TD_INFORMATION_ICON]]"
+						"type":"[[TD_INFORMATION_ICON]]",
+						"verify":{}
 					},
 					"PTR_MSG_PRINTUI_QUEUE_CANCEL":{
 						"type":"[[IDI_QUESTION]]"
@@ -24138,6 +24187,7 @@
 					"5010",
 					"5020",
 					"5030",
+					"6000",
 					"10000",
 					"10010",
 					"sample_error",
@@ -24157,7 +24207,8 @@
 					"prog_preparemovecopy",
 					"prog_dupes",
 					"prog_processing_cap",
-					"prog_processing"
+					"prog_processing",
+					"group_index_title"
 				]
 			},
 			"PTRMDLG_TOOLS_RENAMER_OPSEL":{
@@ -25357,6 +25408,26 @@
 					"#l_check_ignore":{},
 					"#l_check_delete":{},
 					"#l_info":{}
+				}
+			},
+			"PTRMDLG_TOOLS_RENAMER_GROUP_INDEX": {
+				"controls": {
+					"#l_variable":{},
+					"#l_group_change": {},
+					"#l_counted": {},
+					"#l_digits": {},
+					"#l_ttype_number": {},
+					"#l_files_in_group": {},
+					"#l_ttype_token": {},
+					"#l_token_info": {},
+					"#l_btn_vars": {},
+					"#l_group_match": {
+						"style":"bold"
+					},
+					"#l_group_insert": {
+						"style":"bold"
+					},
+					"#l_text": {}
 				}
 			}
 		}

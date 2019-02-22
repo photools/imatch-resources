@@ -1,17 +1,35 @@
 {
+    "validationErrors": {
+        "commands": [],
+        "strings": [],
+        "properties": [],
+        "menus": [],
+        "dialogs": [],
+        "messages": []
+    },
     "validationIgnore": {
-        "strings": {
-            "PTR_VIEWER_SB_DATA_IMAGE": {},
-            "PTR_VIEWER_SB_DATA_MP3": {},
-            "PTR_VIEWER_SB_DATA_OFFICE": {},
-            "PTR_VIEWER_SB_DATA_PDF": {}
-        },
-        "properties": {
-            "app.ui.treeiconsize:D": {},
-            "cachemanager.minsize:D": {},
-            "config.md.protectunwritten:D": {},
-            "dbview.fm.showfriendlynames:D": {},
-            "objectproperties.folder.offline:D": {}
-        }
+        "commands": [
+            "ID_CMD_FILE_GOTOFILE:H",
+            "ID_CMD_FOLDERS_TREE_CONFIGURE:H",
+            "ID_CMD_VIEWSELECTOR_FOLDERSANDMEDIA:H",
+            "ID_CMD_VIEWWELCOME_FILE_OPEN:H",
+            "ID_DATABASE_OPEN:H"
+        ],
+        "properties": [
+            "app.ui.treeiconsize:D",
+            "cachemanager.minsize:D",
+            "objectproperties.folder.offline:D",
+            "dbview.fm.showfriendlynames:D"
+        ],
+        "dialogs": [
+            "PTRMDLG_DB_DIAG.#l_compact",
+            "PTRMDLG_IMPEXP_TEXT_EXPORT.#l_first_line:H",
+            "PTRMDLG_PRINTUI_CONTAINER_NEW.#l_hf:H",
+            "PTRMDLG_TOOLS_DATETIME.caption"
+        ],
+        "messages": [
+            "PTR_MSG_APPPREFS_RELDEF_CHANGED.content",
+            "PTR_MSG_IMWS_START_FAILED.content"
+        ]
     }
 }

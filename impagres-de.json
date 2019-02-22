@@ -30,7 +30,7 @@
         "ID_INDICATOR_REC": "AUFN",
         "ID_INDICATOR_SCRL": "BILD",
         "PTR_APP_ABOUT": "Ü&ber IMatch Pack & Go...",
-        "PTR_APP_INSTANCE_RUNNING": "IMatch wird zurzeit ausgeführt. Pack & Go kann nicht alle Dateien sichern, solange IMatch ausgeführt wird. Bitte beenden Sie IMatch, bevor Sie mit Pack & Go fortfahren.",
+        "PTR_APP_INSTANCE_RUNNING": "IMatch wird zurzeit ausgeführt. Pack & Go kann nicht alle Dateien sichern, solange IMatch ausgeführt wird.\\r\\nBitte beenden Sie IMatch, bevor Sie mit Pack & Go fortfahren.",
         "PTR_ERRMSG_CHECKSUM": "Prüfsummenfehler.",
         "PTR_ERRMSG_COMPRESSION": "Fehler beim Komprimieren oder Dekomprimieren von Daten.",
         "PTR_ERRMSG_CREATEFILE": "Fehler beim Erstellen einer Datei. Stellen Sie sicher, dass Sie über ausreichende Berechtigungen verfügen.",
