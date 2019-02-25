@@ -12735,7 +12735,11 @@
 								"default":true
 							}
 						]
+					},
+					{
+						"id": "app.dbuilang"
 					}
+
 				]
 			},
 			{
@@ -14940,6 +14944,9 @@
 				"name":"config.metata.2",
 				"desc":"Metadata Configuration dialog",
 				"properties":[
+					{
+						"id":"config.md.uilang"
+					},
 					{
 						"id":"config.md.mwgcompliance"
 					},

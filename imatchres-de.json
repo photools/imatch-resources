@@ -3834,6 +3834,9 @@
         "config.md.mwgcompliance": "Metadata Working Group Konformität",
         "config.md.mwgcompliance:D": "Aktivieren Sie diese Option für optimale Interoperabilität, basierend auf den Regeln und Empfehlungen der Metadata Working Group.",
         "config.md.mwgcompliance:G": "Grundeinstellungen",
+        "config.md.uilang": "Verwende englische Tag- and Gruppennamen",
+        "config.md.uilang:D": "IMatch zeigt standardmäßig Metadaten-Tags in der Sprache an, die für die IMatch-Benutzeroberfläche eingestellt ist.\\r\\nSie können mit dieser Einstellung erzwingen, dass IMatch Tag-namen in englischer Sprache verwendet. Dies kann den Umgang mit Metadaten-Tags vereinfachen.\\r\\n\\r\\nDie Änderung dieser Einstellung erfordert einen Neustart von IMatch, um wirksam zu werden.",
+        "config.md.uilang:G": "Grundeinstellungen",
         "config.md.p2x": "PDF-Daten in XMP-Daten importieren",
         "config.md.p2x:D": "Wenn diese Option aktiv ist, importiert IMatch vorhandene PDF-Daten in den XMP-Datensatz.",
         "config.md.p2x:G": "XMP Import",
@@ -10350,5 +10353,6 @@
         "PTRMDLG_TOOLS_RENAMER_GROUP_INDEX.#l_digits": "&Stellen:",
         "PTRMDLG_TOOLS_RENAMER_GROUP_INDEX.#l_ttype_token": "Element aus &Liste:",
         "PTRMDLG_TOOLS_RENAMER_GROUP_INDEX.#l_token_info": "Geben Sie eine beliebige Anzahl von Elementen ein, getrennt durch ein Komma. Das erste Element wird für die erste Datei in der Gruppe verwendet, dass zweite Element für die zweite Datei usw. Enthält eine Gruppe mehr Dateien als Elemente in der Liste verfügbar sind, beginnt der Renamer wieder mit dem ersten Element. Die erste Datei einer Gruppe verwendet immer das erste Element."
-    }
+    },
+    "version": "2019.2.4"
 }

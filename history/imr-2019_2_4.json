@@ -2,7 +2,7 @@
 	"commands":{
 		"CG_IDS_TIPOFTHEDAYMENU":"T&ip of the Day...",
 		"CG_IDS_TIPOFTHEDAYMENU:H":"Tip of the Day",
-		"CG_IDS_TIPOFTHEDAYMENU_TEST":"\\nLast modified on {File.Modified}. Property of Tom & Jerry.",
+		"CG_IDS_TIPOFTHEDAYMENU_TEST":"Last modified on {File.Modified}. Property of Tom & Jerry.",
 		"ID_APPPREFS_RELVERDET_FOLDER_PATTERN":"Add &Pattern...",
 		"ID_APPPREFS_RELVERDET_FOLDER_PATTERN:H":"Add a new folder pattern",
 		"ID_APPPREFS_RELVERDET_FOLDER_SELECT":"&Select a Folder...",
@@ -3342,11 +3342,6 @@
 		"app.protection.style.cd.0":"Default",
 		"app.protection.style:D":"This setting controls how protected files are displayed.",
 		"app.protection.style:G":"Protected Files",
-		
-		"app.dbuilang":"Database user interface language",
-		"app.dbuilang:D":"This setting controls if the database uses the user interface language set in IMatch or 'English'.",
-		"app.dbuilang:G":"Settings",
-		
 		"app.readonlydb":"Open databases in read-only mode",
 		"app.readonlydb:D":"If this setting is enabled, IMatch opens  local and remote databases in read-only mode. This is required if you want to share databases with other users. Only when all users open a database in read-only mode it can be shared.",
 		"app.readonlydb:G":"Settings",
@@ -3842,11 +3837,6 @@
 		"config.md.mwgcompliance":"Metadata Working Group Compliance",
 		"config.md.mwgcompliance:D":"Set this option to setup default values for optimal compliance with the rules and guidelines defined by the Metadata Working Group.",
 		"config.md.mwgcompliance:G":"Basic Settings",
-
-		"config.md.uilang":"Use English Tag and Group Names",
-		"config.md.uilang:D":"By default, the metadata tags are displayed in the language configured for the IMatch user interface.\\r\\nEnable this option to display English tag names instead. This also affects the Tag Selector dialog box and the language in used for searching tags by name.\\r\\nChanging this requires a restart of IMatch to become effective.",
-		"config.md.uilang:G":"Basic Settings",
-
 		"config.md.p2x":"Import PDF into XMP",
 		"config.md.p2x:D":"If this is enabled, IMatch imports existing PDF data in the file into the corresponding fields in the XMP record.",
 		"config.md.p2x:G":"XMP Import",
