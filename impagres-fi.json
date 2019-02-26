@@ -29,7 +29,7 @@
 		"ID_INDICATOR_REC":"REC",
 		"ID_INDICATOR_SCRL":"VIER",
 		"PTR_APP_ABOUT":"T&ietoa IMatch Pack & Go:sta",
-		"PTR_APP_INSTANCE_RUNNING":"IMatch Pack & Go on havainnut, että IMatch on käynnissä.\\r\\nPack & Go ei voi varmuuskopioida kaikkia tiedostoja silloin kun IMatch on käynnissä. Ole hyvä ja sulje IMatch ennen kuin jatkat.",
+		"PTR_APP_INSTANCE_RUNNING":"IMatch Pack & Go on havainnut, että IMatch on käynnissä.\r\nPack & Go ei voi varmuuskopioida kaikkia tiedostoja silloin kun IMatch on käynnissä. Ole hyvä ja sulje IMatch ennen kuin jatkat.",
 		"PTR_STEP_INIT":"Alustetaan..."
 	},
 	"messages":{},
@@ -47,7 +47,7 @@
 		"PTRMDLG_APP_MUTEX.caption":"IMatch Pack & Go",
 		"PTRMDLG_APP_PACK.#l_btn_browse":"S&elaa...",
 		"PTRMDLG_APP_PACK.#l_check_cache":"Pakkaa myös &välimuistitiedostot",
-		"PTRMDLG_APP_PACK.#l_check_cache:H":"\\r\\nKun tämä asetus on päällä, kaikkien tietokantojen välimuistitiedostot sisällytettään pakkaukseen.\\r\\nSiitä syystä pakkaustiedostoista voi tulla hyvin suuria!",
+		"PTRMDLG_APP_PACK.#l_check_cache:H":"\r\nKun tämä asetus on päällä, kaikkien tietokantojen välimuistitiedostot sisällytettään pakkaukseen.\r\nSiitä syystä pakkaustiedostoista voi tulla hyvin suuria!",
 		"PTRMDLG_APP_PACK.#l_check_compact":"T&iivistä ja optimoi tietokannat",
 		"PTRMDLG_APP_PACK.#l_check_compact:H":"Tiivistä ja optimoi tietokannat ennen niiden pakkaamista.",
 		"PTRMDLG_APP_PACK.#l_include_db":"Sisällytä näm&ä tietokannat:",

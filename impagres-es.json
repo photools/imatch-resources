@@ -81,7 +81,7 @@
 		"ID_CMD_VIEWWELCOME_FILE_NEW:H":"Este comando crea una base de datos nueva.",
 		"ID_CMD_VIEWWELCOME_FILE_NEW:K":"N",
 		"ID_CMD_VIEWWELCOME_FILE_OPEN":"Abrir Base de Dat&os...",
-		"ID_CMD_VIEWWELCOME_FILE_OPEN:H":"Abre una Base de Datos existente. \\nUtilice este comando para abrir una Base de Datos creada anteriormente.",
+		"ID_CMD_VIEWWELCOME_FILE_OPEN:H":"Abre una Base de Datos existente. \nUtilice este comando para abrir una Base de Datos creada anteriormente.",
 		"ID_CMD_VIEWWELCOME_HELP":"Abrir el Sistema de Ayuda de IMatc&h",
 		"ID_CMD_VIEWWELCOME_HELP:H":"Abre el Sistema de Ayuda de IMatch",
 		"ID_DB_FAVORITE":"Ejecutar Acceso Directo &Favorito...",

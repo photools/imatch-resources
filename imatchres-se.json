@@ -117,7 +117,7 @@
 		"ID_CMD_VIEWWELCOME_FILE_NEW:H":"Skapa en ny databas",
 		"ID_CMD_VIEWWELCOME_FILE_NEW:K":"N",
 		"ID_CMD_VIEWWELCOME_FILE_OPEN":"&Öppna databas...",
-		"ID_CMD_VIEWWELCOME_FILE_OPEN:H":"Öppna befintlig databas. \\nAnvänd detta kommando för att öppna en databas som du skapat tidigare.",
+		"ID_CMD_VIEWWELCOME_FILE_OPEN:H":"Öppna befintlig databas. \nAnvänd detta kommando för att öppna en databas som du skapat tidigare.",
 		"ID_CMD_VIEWWELCOME_HELP":"IMatch &hjälp",
 		"ID_CMD_VIEWWELCOME_HELP:H":"Öppna hjälpen för IMatch",
 		"ID_DB_FAVORITE":"Kör &Favoritgenväg...",
