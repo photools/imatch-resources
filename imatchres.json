@@ -12653,6 +12653,9 @@
 						"id":"app.viewer.ptcraw.prefer"
 					},
 					{
+						"id":"app.viewer.iquirksmode"
+					},
+					{
 						"id":"app.processcontrol.corethreads"
 					},
 					{
@@ -12979,6 +12982,9 @@
 					},
 					{
 						"id":"dbview.fm.reversesortorder"
+					},
+					{
+						"id":"dbview.fm.showdrivelabel"
 					}
 				]
 			},
@@ -13843,6 +13849,9 @@
 					},
 					{
 						"id":"filewnd.ui.autoadvance"
+					},
+					{
+						"id":"filewnd.LOD.description"
 					},
 					{
 						"id":"filewnd.LOD.thumbpanelcols"
@@ -16154,7 +16163,9 @@
 				"name":"Tasks.Renamer",
 				"strings":{
 					"PTR_TASK_RENAMER_PROJECTCODECAPTION":{},
-					"PTR_TASK_RENAMER_PROJECTCODEPROMPT":{}
+					"PTR_TASK_RENAMER_PROJECTCODEPROMPT":{},
+					"PTR_TASK_RENAMER_USERPROMPTCAPTION":{},
+					"PTR_TASK_RENAMER_USERPROMPTPROMPT":{}
 				}
 			},
 			{
@@ -24151,6 +24162,7 @@
 					"0",
 					"10",
 					"20",
+					"30",
 					"100",
 					"110",
 					"120",
@@ -24202,6 +24214,7 @@
 					"preset_name_orgdigitsunique",
 					"preset_name_datetime",
 					"default_projectcode",
+					"default_userprompt",
 					"t_substr",
 					"t_substr0",
 					"t_replacefrm",

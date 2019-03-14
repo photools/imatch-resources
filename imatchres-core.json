@@ -138,7 +138,11 @@
     "PTR_BM_DIALOG_BTN_ICONS_MINI": {
       "fileName": "bitmaps\\dialog_btn_icons_8x8.png",
       "itemWidth": "8"
-    },
+	},
+    "PTR_BM_DIALOG_BTN_ICONS_MINI_LARGE": {
+		"fileName": "bitmaps\\dialog_btn_icons_8x8_doublesize.png",
+		"itemWidth": "16"
+	},
     "PTR_BM_FORMAT_UNKNOWN_BIG": {
       "fileName": "bitmaps\\unknown_format_128x128.png",
       "itemWidth": "128"
