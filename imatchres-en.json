@@ -3789,6 +3789,11 @@
 		"config.md.datetimeimport.native":"Native date/time information",
 		"config.md.datetimeimport.native:D":"If this option is enabled, IMatch fills empty XMP created/digitized tags from the information gathered from native date and time information (e.g., for video, audio, PDF and Office formats)",
 		"config.md.datetimeimport.native:G":"XMP Import",
+
+		"config.md.quicktime.favorcreationdate":"Favor CreationDate over CreateDate",
+		"config.md.quicktime.favorcreationdate:D":"Different Apple devices and software products create CreationDate and CreateDate timestamps in video files. Often these timestamps differ! IMatch by default uses the CreateDate, but this may be wrong for your files. Use this option to switch IMatch to favor CreationDate.",
+		"config.md.quicktime.favorcreationdate:G":"QuickTime Metadata",
+
 		"config.md.e2x":"Import EXIF into XMP",
 		"config.md.e2x:D":"If this is enabled, IMatch imports existing EXIF data in the file into the corresponding fields in the XMP record.",
 		"config.md.e2x:G":"XMP Import",
@@ -8529,6 +8534,8 @@
 		"PTRMDLG_GEOPANEL_LOCEDIT.#l_country":"Country",
 		"PTRMDLG_GEOPANEL_LOCEDIT.#l_delete":"Delete",
 		"PTRMDLG_GEOPANEL_LOCEDIT.#l_desc":"Description:",
+		"PTRMDLG_GEOPANEL_LOCEDIT.#l_keywords":"Keywords:",
+		"PTRMDLG_GEOPANEL_LOCEDIT.#l_keywords:H":"Optionally enter a list of keywords, separated by ; to assign to the file. Variables are supported.",
 		"PTRMDLG_GEOPANEL_LOCEDIT.#l_group":"Group:",
 		"PTRMDLG_GEOPANEL_LOCEDIT.#l_lat":"Lat:",
 		"PTRMDLG_GEOPANEL_LOCEDIT.#l_location":"Location:",

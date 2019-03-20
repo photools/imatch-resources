@@ -15104,6 +15104,9 @@
 						"id":"config.md.datetimeimport.native"
 					},
 					{
+						"id":"config.md.quicktime.favorcreationdate"
+					},
+					{
 						"id":"config.md.fformats.iptc"
 					},
 					{
@@ -20860,6 +20863,7 @@
 					"#l_onlyempty":{},
 					"#l_name":{},
 					"#l_desc":{},
+					"#l_keywords":{},
 					"#l_group":{},
 					"#l_coordinates":{},
 					"#l_lat":{},
