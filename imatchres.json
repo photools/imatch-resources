@@ -10813,7 +10813,7 @@
 							},
 							{
 								"type":"menu",
-								"id":"ID_MENU_VIEWER_SHOW",
+								"id":"ID_MENU_VIEWER_GRID_OPTIONS",
 								"elements":[
 									{
 										"type":"cmd",
@@ -13270,6 +13270,9 @@
 					},
 					{
 						"id":"objectproperties.category.comment"
+					},
+					{
+						"id":"objectproperties.category.thumbnail"
 					},
 					{
 						"id":"objectproperties.category.alias"
@@ -24169,6 +24172,8 @@
 					"30",
 					"100",
 					"110",
+					"111",
+					"112",
 					"120",
 					"121",
 					"200",
@@ -24251,7 +24256,9 @@
 					"cap_remove",
 					"cap_replace",
 					"cap_with",
-					"cap_hint"
+					"cap_hint",
+					"cap_replace_token_before",
+					"cap_replace_token_after"
 				]
 			},
 			"PTRMDLG_TOOLS_RENAMER_SUBSTR":{
