@@ -805,6 +805,9 @@
 					},
 					{
 						"id":"ID_CMD_FAVORITE_SET_CHOOSE"
+					},
+					{
+						"id":"ID_CMD_FAVORITE_SHOW_HOTKEYS"
 					}
 				]
 			},
@@ -1899,6 +1902,10 @@
 					{
 						"id":"ID_HELP_LEARNING_CENTER",
 						"bmIdx":"12"
+					},
+					{
+						"id":"ID_CMD_VIEWWELCOME_CHEATSHEET",
+						"bmIdx":"1"
 					}
 				]
 			},
@@ -3291,6 +3298,10 @@
 					},
 					{
 						"id":"ID_FILEWND_SEARCHBAR_SET_10",
+						"bmIdx":"7"
+					},
+					{
+						"id":"ID_FILEWND_SEARCHBAR_SET_11",
 						"bmIdx":"7"
 					},
 					{
@@ -5412,6 +5423,10 @@
 								"id":"ID_HELP_LEARNING_CENTER"
 							},
 							{
+								"type":"cmd",
+								"id":"ID_CMD_VIEWWELCOME_CHEATSHEET"
+							},
+							{
 								"type":"separator"
 							},
 							{
@@ -6310,6 +6325,10 @@
 								"id":"ID_HELP_LEARNING_CENTER"
 							},
 							{
+								"type":"cmd",
+								"id":"ID_CMD_VIEWWELCOME_CHEATSHEET"
+							},
+							{
 								"type":"separator"
 							},
 							{
@@ -6542,6 +6561,13 @@
 					{
 						"type":"cmd",
 						"id":"ID_CMD_FAVORITE_SET_EMPTY"
+					},
+					{
+						"type":"separator"
+					},
+					{
+						"type":"cmd",
+						"id":"ID_CMD_FAVORITE_SHOW_HOTKEYS"
 					}
 				]
 			},
@@ -16260,7 +16286,8 @@
 					"PTR_SEARCHSET_8":{},
 					"PTR_SEARCHSET_16":{},
 					"PTR_SEARCHSET_32":{},
-					"PTR_SEARCHSET_64":{}
+					"PTR_SEARCHSET_64":{},
+					"PTR_SEARCHSET_128":{}
 				}
 			},
 			{
@@ -17540,6 +17567,9 @@
 					},
 					"PTR_ERRMSG_5017":{
 						"desc":"IMERR_PARS_UNKNOWNTAG"
+					},
+					"PTR_ERRMSG_5018":{
+						"desc":"IMERR_PARS_UNKNOWNATTRIBUTE"
 					},
 					"PTR_ERRMSG_5101":{
 						"desc":"IMERR_DATAGROUP_TOOMANYCHILDREN"
@@ -21478,7 +21508,15 @@
 					"tt_tag_regexp",
 					"tt_tag_contains_any",
 					"tt_tag_contains_all",
-					"tt_tag_contains_word"
+					"tt_tag_contains_word",
+					"tt_attribute_generic",
+					"tt_attribute_novalue",
+					"tt_attribute_hasvalue",
+					"tt_attribute_between",
+					"tt_attribute_regexp",
+					"tt_attribute_contains_any",
+					"tt_attribute_contains_all",
+					"tt_attribute_contains_word"
 				]
 			},
 			"PTRMDLG_GROUP_DATA":{
@@ -22833,7 +22871,8 @@
 				"desc":"Dialog to select favorite shortcuts",
 				"controls":{
 					"#l_prompt":{},
-					"#l_msg":{}
+					"#l_msg":{},
+					"#l_show_list":{}
 				}
 			},
 			"PTRMDLG_STACKING_AUTOSTACK":{
@@ -24361,6 +24400,7 @@
 					},
 					"#l_check_orientation":{},
 					"#l_check_similardims":{},
+					"#l_check_scope":{},
 					"#l_less":{},
 					"#l_more":{},
 					"#l_importance":{},
