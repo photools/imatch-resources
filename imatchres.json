@@ -15229,6 +15229,12 @@
 						"id":"app.geo.bingmaps.apikey"
 					},
 					{
+						"id":"app.geo.here.enabled"
+					},
+					{
+						"id":"app.geo.here.apikey"
+					},
+					{
 						"id":"app.geo.geonames.apikey"
 					},
 					{
@@ -15240,6 +15246,9 @@
 							},
 							{
 								"data":"10"
+							},
+							{
+								"data":"30"
 							}
 						]
 					},
@@ -15252,6 +15261,9 @@
 							},
 							{
 								"data":"10"
+							},
+							{
+								"data":"30"
 							}
 						]
 					},
@@ -19356,6 +19368,9 @@
 						"type":"[[IDI_INFORMATION]]"
 					},
 					"PTR_MSG_GEO_GEONAMES_API_KEY":{
+						"type":"[[IDI_INFORMATION]]"
+					},
+					"PTR_MSG_GEO_HERE_API_KEY":{
 						"type":"[[IDI_INFORMATION]]"
 					}
 				}
